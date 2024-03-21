@@ -16,4 +16,4 @@ jobs:
         run: echo "The time was ${{ steps.hello-action.outputs.time }} when the action said hello"
 
       - name: path
-        run: pwd
+        run: ls
