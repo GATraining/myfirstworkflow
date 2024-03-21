@@ -17,5 +17,5 @@ jobs:
           echo "Triggered by event: ${{ github.event_name }}"
           echo "Branch is ${{ github.ref }} and your repository is ."
       - name: List files in the repository
-        run: ls
+        run: tree
         shell: bash
