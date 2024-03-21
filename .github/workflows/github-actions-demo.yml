@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3.3.0
       - run: |
-          sh 'echo "Triggered by event: ${{ github.event_name }}"'
-          sh 'echo "Branch is ${{ github.ref }} and your repository is ."'
+          echo "Triggered by event: ${{ github.event_name }}"
+          echo "Branch is ${{ github.ref }} and your repository is ."
       - name: List files in the repository
         run: sh 'ls'
