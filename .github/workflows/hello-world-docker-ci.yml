@@ -17,3 +17,9 @@ jobs:
 
       - name: path
         run: ls
+
+      - name: Run my own container action
+        id: hello-action
+        uses: ./hello-world-docker-action
+        with:
+          who-to-greet: '@wulfland'
